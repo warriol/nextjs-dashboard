@@ -31,6 +31,19 @@ export type Revenue = {
   revenue: number;
 };
 
+export type ApiExterna = {
+  id: string;
+  title: string;
+  price: number;
+  description: string;
+  category: string;
+  image: string;
+  rating: {
+    rate: number;
+    count: number;
+  };
+};
+
 export type LatestInvoice = {
   id: string;
   name: string;
