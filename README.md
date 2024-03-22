@@ -36,7 +36,9 @@ available via `npm run-script`:
 
 
 # Inatalar Node.js en windows
-- desde el sitio oficial descargar el instalador y ejecutarlo
+1. desde el sitio oficial descargar el instalador y ejecutarlo: https://nodejs.org/en/download/current
+2. En el proceso de instalación, te preguntará si quiere instalar automaticamente las herramientas necesarias, debe marcar esta opción.
+3. Instalar Next: npm install next
 
 # Actualizar a la version actual
 - desde el sitio oficial descargar el instalador de Node.js e instalarlo
@@ -64,6 +66,14 @@ available via `npm run-script`:
 npx create-next-app@latest nextjs-dashboard --use-npm --example "https://github.com/vercel/next-learn/tree/main/dashboard/starter-example"
 ´´´
 
-
-# utilizar bNext y Vercel (https://nextjs.org/)
+## utilizar bNext y Vercel (https://nextjs.org/)
 - es necesario tener una cuenta en github (repositorio) y en vercel (base de datos)
+
+- crear una base de datos en Storage
+- copiar los archivos de conexion en .env
+- importar por consola las dependencias de vercel
+- npm install @vercel/postgres
+
+# crear datos en la tabla par apruebas
+- existe el archivo /scrtips/seed.js
+-agregar esta linea en package.json, dentro de "scripts" :: "seed": "node -r dotenv/config ./scripts/seed.js"
